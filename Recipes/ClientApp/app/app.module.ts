@@ -17,6 +17,8 @@ import { DataService } from './data.service';
 const appRoutes: Routes = [
     { path: '', component: RecipeListComponent },
     { path: 'create', component: RecipeCreateComponent },
+
+
     { path: 'edit/:id', component: RecipeEditComponent },
     { path: '**', component: NotFoundComponent }
 ];
