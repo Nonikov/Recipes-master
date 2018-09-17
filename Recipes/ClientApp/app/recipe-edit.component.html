@@ -1,0 +1,8 @@
+﻿<div *ngIf="loaded">
+    <h2>Изменение данных о рецепте</h2>
+    <recipe-form [(recipe)]="recipe"></recipe-form>
+    <div class="form-group">
+        <input type="button" style="background-color:darkorange" value="Сохранить" (click)="save()" class="btn btn-success" />
+    </div>
+</div>
+<a routerLink="/" class="nav-link">Назад к списку</a>

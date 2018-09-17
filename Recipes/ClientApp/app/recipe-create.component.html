@@ -1,0 +1,8 @@
+﻿<div>
+    <h1>Добавление нового рецепта</h1>
+    <recipe-form [(recipe)]="recipe"></recipe-form>
+    <div class="form-group">
+        <input style="background-color:darkorange" type="button" value="Сохранить" (click)="save()" class="btn btn-success" />
+        <a  routerLink="/" class="btn btn-warning">Отмена</a>
+    </div>
+</div>

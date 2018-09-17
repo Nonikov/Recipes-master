@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\app\app.component.ts" />
+    <None Remove="ClientApp\app\app.module.ts" />
+    <None Remove="ClientApp\app\data.service.ts" />
+    <None Remove="ClientApp\app\not-found.component.ts" />
+    <None Remove="ClientApp\app\recipe-create.component.ts" />
+    <None Remove="ClientApp\app\recipe-edit.component.ts" />
+    <None Remove="ClientApp\app\recipe-form.component.ts" />
+    <None Remove="ClientApp\app\recipe-list.component.ts" />
+    <None Remove="ClientApp\app\recipe.ts" />
+    <None Remove="ClientApp\main.ts" />
+    <None Remove="ClientApp\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\app.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\app.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\data.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\not-found.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\recipe-create.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\recipe-edit.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\recipe-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\recipe-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\recipe.ts" />
+    <TypeScriptCompile Include="ClientApp\main.ts" />
+    <TypeScriptCompile Include="ClientApp\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
